@@ -1,0 +1,42 @@
+.body{
+  background-image: url("../images/bg.jpeg");
+}
+
+
+
+
+
+.menu {
+            display: flex;            
+            justify-content: center;
+            gap: 30px;
+            padding: 15px;
+            
+        }
+        .menu{
+        display: flex;
+        justify-content: space-evenly;
+        
+      }
+
+        .menu a {
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            color: rgb(0, 123, 139);
+        }
+
+        .menu a:hover {
+            color: rgb(255, 0, 179);
+        }
+       
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color:rgb(237, 243, 181);
+  z-index: 1000;
+
+}
+
