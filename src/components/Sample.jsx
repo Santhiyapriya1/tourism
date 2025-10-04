@@ -1,20 +1,13 @@
-import React from 'react'
-import "./Sample.css"
-import { Link } from 'react-router-dom';
-import bg from '../images/bg.jpeg';
-const Sample = () => {
-  return (
-   
-    <div className="menu">
-       
-      
-  <Link to="/">HOME</Link>
-  <Link to="/about">ABOUT US</Link>
-  <Link to="/destination">DESTINATION</Link>
-  <Link to="/contact">CONTACT</Link>
-</div>
+import { NavLink } from "react-router-dom";
+import "./Sample.css";
 
+export default function Sample() {
+  return (
+    <nav className="menu">
+      <NavLink to="/" className="nav" activeclassname="active">HOME</NavLink>
+      <NavLink to="/about" className="nav" activeclassname="active">ABOUT US</NavLink>
+      <NavLink to="/destination" className="nav" activeclassname="active">DESTINATION</NavLink>
+      <NavLink to="/contact" className="nav" activeclassname="active">CONTACT</NavLink>
+    </nav>
   );
 }
-
-export default Sample

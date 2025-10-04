@@ -1,23 +1,12 @@
-import React from "react";
 import "./Home.css";
-import bgImage from "../images/sb.jpg";
 
-function Home() {
+export default function Home() {
   return (
-    <div
-      className="home"
-      style={{
-        backgroundImage: `url(${bgImage})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        height: "100vh",
-      }}
-    >
+    <div className="home">
       <div className="overlay">
-        <h1 className="company-name">My Company</h1>
+        <h1 className="company-name">Explore The World</h1>
+        <button className="explore-btn">Explore Now</button>
       </div>
     </div>
   );
 }
-
-export default Home;
